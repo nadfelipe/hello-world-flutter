@@ -34,6 +34,7 @@ jobs:
           git config --global user.email nadfelipe.s@gmail.com
           git config --global user.name nadfelipe
           git status
+          # git remote set-url origin https://${{secrets.token}}@github.com/nadfelipe/hello-world-flutter.git
           git remote add origin https://${{secrets.token}}@github.com/nadfelipe/hello-world-flutter.git
           git checkout -b gh-pages
           git add --all
